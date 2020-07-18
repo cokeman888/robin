@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+.Navbarr {
+  min-height: 6vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 30px 90px 20px 90px;
+  letter-spacing: 4px;
+  transition: all 0.8s ease-in;
+  z-index: 1000;
+  position: fixed;
+  color: white;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+
+  .NavTitle {
+    position: relative;
+    font-weight: 800;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 4px;
+    transition: 0.6s;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .NavContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px 10px 30px;
+  }
+  .NavLinks {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: white;
+  }
+}
+.Scrolled {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  padding: 20px 20px 10px 20px;
+  background: none;
+  margin: 10px;
+}
+a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+.Home {
+  background-image: url("./Assets/cam.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  transition: all 0.8s;
+  color: white;
+
+  &-heading-1 {
+    position: absolute;
+    border: 3px solid white;
+    top: 25vh;
+    left: 15vw;
+    padding: 1vh 1vw 1vh 1vw;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  &-heading-2 {
+    position: absolute;
+    border: 3px solid white;
+    top: 45vh;
+    left: 40vw;
+
+    padding: 1vh 1vw 1vh 1vw;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &-heading-3 {
+    position: absolute;
+    border: 3px solid white;
+    left: 65vw;
+    padding: 1vh 1vw 1vh 1vw;
+    top: 65vh;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+.Home-1 {
+  background-image: url("./Assets/siluet.jpg");
+  background-size: cover;
+  transition: all 0.8s;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.Home-2 {
+  background-image: url('./Assets/images/jeryy.png');
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  transition: all 0.8s;
+}
+.Home-3 {
+  background-image: url('./Assets//images/justin.jpg');
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  transition: all 0.8s;
+}
+.About {
+  width: 100vw;
+  height: 170vh;
+  text-align: center;
+  &-left {
+    background-color: wheat;
+    height: 70vh;
+    text-align: center;
+    width: 50vw;
+
+    padding-top: 2vh;
+    &-text {
+      padding: 1vh 5vw 3vh 5vw;
+      border: black solid 1px;
+      margin: 3vh 5vw 10vh 5vw;
+      height: 50vh;
+    }
+  }
+  &-right {
+    background-color: black;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    padding-top: 2vh;
+    width: 50vw;
+    
+
+    &-text {
+      padding: 1vh 5vw 3vh 5vw;
+      border: white solid 1px;
+      margin: 3vh 5vw 10vh 5vw;
+      height: 50vh;
+      img{height: 110%;
+        
+      }
+    }
+  }
+}
+
+.Service {
+  width: 100vw;
+  background-image: url("./Assets/service-bg.png");
+  height: 100vh;
+  padding-top: 2vh;
+  letter-spacing: 3px;
+  font-weight: 600;
+
+  h3 {
+    padding-top: 10px;
+    font-weight: 500;
+    color: black;
+    opacity: 1;
+  }
+
+  &-title {
+    display: inline;
+    padding: 0.1% 1.8%;
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 4px;
+  }
+
+  .event-documentation {
+    border: black solid 3px;
+    opacity: 1;
+    width: 20%;
+    margin: 2em;
+    margin-left: 2%;
+
+    &:hover {
+      filter: invert(100%);
+      background-color: white;
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  .product-video {
+    border: black solid 3px;
+    width: 20%;
+    margin: 2em;
+    &:hover {
+      filter: invert(100%);
+      background-color: white;
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  .studio-rental {
+    border: black solid 3px;
+    width: 20%;
+    margin: 2em;
+    &:hover {
+      filter: invert(100%);
+      background-color: white;
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  .passport-photo {
+    border: black solid 3px;
+    width: 20%;
+    margin-right: 3%;
+    margin: 2em;
+    &:hover {
+      filter: invert(100%);
+      background-color: white;
+      transform: scale(1.1, 1.1);
+    }
+  }
+  .logo {
+    font-size: 30px;
+    margin: 0.5em;
+  }
+  .playVideo {
+    margin-top: 0%;
+    width: 57vw;
+    height: 65%;
+    margin: auto;
+  }
+}
+
+.Portfolio {
+  height: 100vh;
+  width: 100%;
+  transition: all 0.6s;
+ 
+
+  &-title {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .probar {
+    display: inline;
+    
+  }
+  .prokiri {
+    border: solid black 3px;
+    height: 9%;
+    margin-top: 0px;
+    padding-top: 0px;
+    img{
+      padding-bottom: 3%;
+      padding-top: 0px;
+    }
+    
+  }
+  .prokanan {
+    border: solid black 3px;
+    height: 85vh;
+  }
+
+  .project {
+    border: solid black 2px;
+    margin: 100px;
+    height: 10vh;
+    width: 23vw;
+  }
+  .display {
+    border: solid black 3px;
+    margin-top: 2%;
+  }
+}
+.Highlight {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.banner{
+background-image: url(./Assets//images/deku.jpg);
+height: 70vh;
+background-size: cover;
+}
+.Footer {
+  height: 30vh;
+  width: 100vw;
+  background-color: rgba($color: #201a16, $alpha: 1);
+  color: white;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+  overflow: hidden;
+  padding: 30px 0;
+  box-sizing: border-box;
+
+  .inner {
+    text-align: center;
+
+    margin: 0;
+
+    .icon-container {
+      .icon-list {
+        text-decoration: none;
+
+        list-style: none;
+
+        .icony {
+          width: 3vw;
+          display: inline-block;
+          background-color: white;
+
+          padding: 0px;
+          margin: 3px;
+
+          img {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .location {
+      display: inline;
+    }
+
+    .chat {
+      display: inline;
+    }
+  }
+
+  // .icons {
+  //   width: 10vw;
+  //   text-decoration: none;
+
+  //   ul {
+  //     display: flex;
+  //     color: whitesmoke;
+
+  //     li {
+  //       list-style: none;
+  //       text-align: center;
+  //       display: block;
+  //     }
+  //     a {
+
+  //     }
+  //   }
+
+  // li {
+  //   list-style-type: none;
+  //   float: left;
+
+  //   display: inline-block;
+  //   outline: 1px solid pink;
+
+  //   text-align: center;
+  //   margin-left: -0.25em;
+  //   vertical-align: top;
+
+  //   img {
+  //     width: 50px;
+  //     height: 50px;
+  //     padding-top: 15px;
+  //     display: block;
+  //     margin: 0 auto;
+  //   }
+  // }
+  // }
+}
